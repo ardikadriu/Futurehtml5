@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Avatar from "@/public/images/avatar.jpg";
+import pic03 from "@/public/images/pic03.jpg";
 
 const Thirdpage = () => {
   return (
@@ -12,7 +13,7 @@ const Thirdpage = () => {
           <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
         </div>
         <div className="meta">
-          <time className="published" datetime="2015-10-22">
+          <time className="published" dateTime="2015-10-22">
             October 22, 2015
           </time>
           <a href="#" className="author">
@@ -22,7 +23,7 @@ const Thirdpage = () => {
         </div>
       </header>
       <a href="single.html" className="image featured">
-        <img src="images/pic03.jpg" alt="" />
+        <Image src={pic03} alt="" />
       </a>
       <p>
         Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed

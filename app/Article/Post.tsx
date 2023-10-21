@@ -1,3 +1,7 @@
+import Image from "next/image";
+import avatar from "@/public/images/avatar.jpg";
+import pic01 from "@/public/images/pic01.jpg";
+
 const Post = () => {
   return (
     <article className="post">
@@ -9,17 +13,17 @@ const Post = () => {
           <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
         </div>
         <div className="meta">
-          <time className="published" datetime="2015-11-01">
+          <time className="published" dateTime="2015-11-01">
             November 1, 2015
           </time>
           <a href="#" className="author">
             <span className="name">Jane Doe</span>
-            <img src="images/avatar.jpg" alt="" />
+            <Image src={avatar} alt="" />
           </a>
         </div>
       </header>
       <a href="single.html" className="image featured">
-        <img src="images/pic01.jpg" alt="" />
+        <Image src={pic01} alt="" />
       </a>
       <p>
         Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed

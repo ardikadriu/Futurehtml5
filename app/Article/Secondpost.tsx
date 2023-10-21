@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Pic02 from "@/public/images/pic03.jpg";
+import avatar from "@/public/images/avatar.jpg";
 
 const Secondpost = () => {
   return (
@@ -14,12 +15,12 @@ const Secondpost = () => {
           <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
         </div>
         <div className="meta">
-          <time className="published" datetime="2015-10-25">
+          <time className="published" dateTime="2015-10-25">
             October 25, 2015
           </time>
           <a href="#" className="author">
             <span className="name">Jane Doe</span>
-            <img src="images/avatar.jpg" alt="" />
+            <Image src={avatar} alt="" />
           </a>
         </div>
       </header>
